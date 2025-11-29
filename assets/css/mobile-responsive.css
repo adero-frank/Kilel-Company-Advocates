@@ -1,0 +1,691 @@
+/* ============================================
+   COMPREHENSIVE MOBILE RESPONSIVENESS
+   Chawla & Co Advocates - Mobile Optimization
+   ============================================ */
+
+/* ============================================
+   BASE MOBILE STYLES (Mobile First)
+   ============================================ */
+
+/* Extra Small Devices (phones, 480px and down) */
+@media only screen and (max-width: 480px) {
+    /* Typography adjustments */
+    html {
+        font-size: 14px;
+    }
+    
+    h1, .hero-title {
+        font-size: 2rem !important;
+        line-height: 1.2 !important;
+    }
+    
+    h2, .section-title {
+        font-size: 1.75rem !important;
+    }
+    
+    h3 {
+        font-size: 1.5rem !important;
+    }
+    
+    /* Hero Section */
+    .hero {
+        min-height: 60vh !important;
+        padding: 2rem 1rem !important;
+    }
+    
+    .hero-content {
+        padding: 2rem 1rem !important;
+    }
+    
+    .hero-title {
+        font-size: 1.75rem !important;
+        margin-bottom: 1rem !important;
+    }
+    
+    .hero-subtitle {
+        font-size: 0.95rem !important;
+        line-height: 1.6 !important;
+        margin-bottom: 1.5rem !important;
+    }
+    
+    .hero-pre-title {
+        flex-direction: column !important;
+        gap: 0.75rem !important;
+        align-items: center !important;
+        text-align: center !important;
+    }
+    
+    .hero-badge, .hero-trust-indicators {
+        font-size: 0.8rem !important;
+        padding: 0.5rem 1rem !important;
+    }
+    
+    .hero-trust-indicators {
+        flex-direction: column !important;
+        gap: 0.5rem !important;
+    }
+    
+    .hero-trust-indicators .divider {
+        display: none !important;
+    }
+    
+    .hero-cta {
+        flex-direction: column !important;
+        gap: 1rem !important;
+        width: 100% !important;
+    }
+    
+    .hero-cta .btn {
+        width: 100% !important;
+        padding: 1rem 1.5rem !important;
+        font-size: 0.95rem !important;
+        justify-content: center !important;
+    }
+    
+    .hero-stats {
+        flex-direction: column !important;
+        gap: 1.5rem !important;
+        margin-top: 2rem !important;
+    }
+    
+    .hero-stat-item {
+        width: 100% !important;
+    }
+    
+    /* Navigation */
+    .navbar {
+        padding: 0.75rem 1rem !important;
+    }
+    
+    .navbar-brand {
+        font-size: 1rem !important;
+    }
+    
+    .navbar-nav {
+        text-align: center !important;
+        padding: 1rem 0 !important;
+    }
+    
+    .navbar-nav .nav-link {
+        padding: 0.75rem 1rem !important;
+        font-size: 0.95rem !important;
+    }
+    
+    .contact-info-bar {
+        display: none !important;
+    }
+    
+    .navbar-contact-info-mobile {
+        padding: 1rem !important;
+        margin-bottom: 1rem !important;
+    }
+    
+    .contact-item-mobile {
+        font-size: 0.85rem !important;
+        margin-bottom: 0.75rem !important;
+    }
+    
+    /* Mobile Action Bar */
+    .mobile-action-bar {
+        position: fixed !important;
+        bottom: 0 !important;
+        left: 0 !important;
+        right: 0 !important;
+        z-index: 1000 !important;
+        display: flex !important;
+        background: var(--background-light) !important;
+        border-top: 2px solid rgba(139, 115, 85, 0.2) !important;
+        box-shadow: 0 -4px 15px rgba(0, 0, 0, 0.1) !important;
+    }
+    
+    .mobile-action {
+        flex: 1 !important;
+        padding: 1rem 0.5rem !important;
+        font-size: 0.8rem !important;
+        flex-direction: column !important;
+        gap: 0.25rem !important;
+    }
+    
+    .mobile-action i {
+        font-size: 1.2rem !important;
+    }
+    
+    /* Sections */
+    .section {
+        padding: 3rem 1rem !important;
+    }
+    
+    .section-title {
+        font-size: 1.75rem !important;
+        margin-bottom: 1rem !important;
+    }
+    
+    .section-subtitle {
+        font-size: 0.95rem !important;
+        line-height: 1.6 !important;
+    }
+    
+    /* Service Cards Grid */
+    .services-grid {
+        grid-template-columns: 1fr !important;
+        gap: 1.5rem !important;
+    }
+    
+    .service-card {
+        padding: 1.5rem !important;
+    }
+    
+    .service-icon {
+        width: 60px !important;
+        height: 60px !important;
+        font-size: 1.5rem !important;
+        margin-bottom: 1rem !important;
+    }
+    
+    .service-title {
+        font-size: 1.25rem !important;
+        margin-bottom: 0.75rem !important;
+    }
+    
+    .service-description {
+        font-size: 0.9rem !important;
+        line-height: 1.6 !important;
+        margin-bottom: 1rem !important;
+    }
+    
+    /* About Section */
+    .about-container {
+        grid-template-columns: 1fr !important;
+        gap: 2rem !important;
+    }
+    
+    .about-stats {
+        grid-template-columns: repeat(2, 1fr) !important;
+        gap: 1rem !important;
+    }
+    
+    .stat-item {
+        padding: 1rem !important;
+    }
+    
+    .stat-number {
+        font-size: 2rem !important;
+    }
+    
+    /* Trust Badges */
+    .trust-badges {
+        flex-direction: column !important;
+        gap: 1rem !important;
+    }
+    
+    .trust-badge-item {
+        padding: 1rem !important;
+        font-size: 0.85rem !important;
+    }
+    
+    /* Buttons */
+    .btn {
+        padding: 0.875rem 1.5rem !important;
+        font-size: 0.9rem !important;
+        min-height: 44px !important; /* Touch-friendly */
+    }
+    
+    .btn i {
+        font-size: 0.9rem !important;
+    }
+    
+    /* Footer */
+    footer {
+        padding: 3rem 1rem 1rem !important;
+    }
+    
+    .footer-container {
+        grid-template-columns: 1fr !important;
+        gap: 2rem !important;
+    }
+    
+    .footer-col {
+        text-align: center !important;
+    }
+    
+    .footer-col h3 {
+        font-size: 1.25rem !important;
+        margin-bottom: 1rem !important;
+    }
+    
+    .footer-links {
+        flex-direction: column !important;
+        gap: 0.75rem !important;
+    }
+    
+    .social-links {
+        justify-content: center !important;
+        margin-top: 1.5rem !important;
+    }
+    
+    /* Forms */
+    .form-group {
+        margin-bottom: 1.25rem !important;
+    }
+    
+    input[type="text"],
+    input[type="email"],
+    input[type="tel"],
+    input[type="date"],
+    textarea,
+    select {
+        padding: 0.875rem 1rem !important;
+        font-size: 0.95rem !important;
+        min-height: 44px !important; /* Touch-friendly */
+    }
+    
+    textarea {
+        min-height: 120px !important;
+    }
+    
+    /* Cards */
+    .card, .service-card, .attorney-card, .testimonial-card {
+        padding: 1.5rem !important;
+    }
+    
+    /* Container */
+    .container-fluid {
+        padding-left: 1rem !important;
+        padding-right: 1rem !important;
+    }
+    
+    /* Practice Areas Grid */
+    .practice-areas-grid {
+        grid-template-columns: 1fr !important;
+        gap: 1.5rem !important;
+    }
+    
+    /* Blog Cards */
+    .blogs-grid {
+        grid-template-columns: 1fr !important;
+        gap: 1.5rem !important;
+    }
+    
+    .blog-card {
+        margin-bottom: 1.5rem !important;
+    }
+    
+    .blog-featured {
+        grid-template-columns: 1fr !important;
+    }
+    
+    .blog-featured-image {
+        height: 250px !important;
+    }
+    
+    /* Case Studies */
+    .case-studies-grid {
+        grid-template-columns: 1fr !important;
+        gap: 1.5rem !important;
+    }
+    
+    /* Testimonials */
+    .testimonials-grid {
+        grid-template-columns: 1fr !important;
+        gap: 1.5rem !important;
+    }
+    
+    /* Attorney Cards */
+    .attorneys-grid {
+        grid-template-columns: 1fr !important;
+        gap: 1.5rem !important;
+    }
+    
+    /* CTA Section */
+    .cta-section {
+        padding: 3rem 1rem !important;
+    }
+    
+    .cta-title {
+        font-size: 1.75rem !important;
+    }
+    
+    .cta-description {
+        font-size: 0.95rem !important;
+    }
+    
+    .cta-buttons {
+        flex-direction: column !important;
+        gap: 1rem !important;
+    }
+    
+    .cta-buttons .btn {
+        width: 100% !important;
+    }
+    
+    /* Floating Action Buttons */
+    .floating-actions {
+        bottom: 80px !important;
+        right: 1rem !important;
+    }
+    
+    .fab-btn {
+        width: 50px !important;
+        height: 50px !important;
+        font-size: 1.2rem !important;
+    }
+    
+    /* WhatsApp Popup */
+    .whatsapp-popup {
+        bottom: 80px !important;
+        left: 1rem !important;
+        right: 1rem !important;
+    }
+    
+    .whatsapp-popup-container {
+        width: 100% !important;
+        max-width: 100% !important;
+    }
+    
+    /* Exit Intent Popup */
+    .exit-intent-popup {
+        padding: 2rem 1.5rem !important;
+        width: 95% !important;
+    }
+    
+    .exit-intent-title {
+        font-size: 1.5rem !important;
+    }
+    
+    /* Resources Section */
+    .resources-grid {
+        grid-template-columns: 1fr !important;
+        gap: 1.5rem !important;
+    }
+    
+    /* Contact Page */
+    .contact-methods-container {
+        grid-template-columns: 1fr !important;
+        gap: 1.5rem !important;
+    }
+    
+    .contact-form-layout {
+        grid-template-columns: 1fr !important;
+    }
+    
+    /* Booking Form */
+    .booking-form {
+        padding: 2rem 1rem !important;
+    }
+    
+    .practice-areas-grid {
+        grid-template-columns: 1fr !important;
+    }
+    
+    .booking-datetime-container {
+        grid-template-columns: 1fr !important;
+    }
+    
+    .time-slots-grid {
+        grid-template-columns: repeat(2, 1fr) !important;
+    }
+    
+    /* Article/Blog Post */
+    .article-layout {
+        grid-template-columns: 1fr !important;
+    }
+    
+    .article-sidebar {
+        margin-top: 2rem !important;
+    }
+    
+    .article-title {
+        font-size: 2rem !important;
+    }
+    
+    .article-body h2 {
+        font-size: 1.5rem !important;
+    }
+    
+    .article-body h3 {
+        font-size: 1.25rem !important;
+    }
+    
+    .article-body p {
+        font-size: 1rem !important;
+    }
+}
+
+/* ============================================
+   SMALL DEVICES (Tablets Portrait, 481px to 768px)
+   ============================================ */
+@media only screen and (min-width: 481px) and (max-width: 768px) {
+    html {
+        font-size: 15px;
+    }
+    
+    .hero {
+        min-height: 65vh !important;
+        padding: 3rem 1.5rem !important;
+    }
+    
+    .hero-title {
+        font-size: 2.25rem !important;
+    }
+    
+    .hero-subtitle {
+        font-size: 1rem !important;
+    }
+    
+    .section {
+        padding: 4rem 1.5rem !important;
+    }
+    
+    .services-grid {
+        grid-template-columns: repeat(2, 1fr) !important;
+        gap: 1.5rem !important;
+    }
+    
+    .about-stats {
+        grid-template-columns: repeat(2, 1fr) !important;
+    }
+    
+    .trust-badges {
+        flex-wrap: wrap !important;
+        justify-content: center !important;
+    }
+    
+    .footer-container {
+        grid-template-columns: repeat(2, 1fr) !important;
+    }
+    
+    .blogs-grid {
+        grid-template-columns: repeat(2, 1fr) !important;
+    }
+    
+    .practice-areas-grid {
+        grid-template-columns: repeat(2, 1fr) !important;
+    }
+    
+    .attorneys-grid {
+        grid-template-columns: repeat(2, 1fr) !important;
+    }
+    
+    .contact-methods-container {
+        grid-template-columns: repeat(2, 1fr) !important;
+    }
+    
+    .time-slots-grid {
+        grid-template-columns: repeat(3, 1fr) !important;
+    }
+}
+
+/* ============================================
+   MEDIUM DEVICES (Tablets Landscape, 769px to 1024px)
+   ============================================ */
+@media only screen and (min-width: 769px) and (max-width: 1024px) {
+    .hero {
+        min-height: 70vh !important;
+    }
+    
+    .services-grid {
+        grid-template-columns: repeat(2, 1fr) !important;
+    }
+    
+    .about-container {
+        grid-template-columns: 1fr !important;
+    }
+    
+    .footer-container {
+        grid-template-columns: repeat(3, 1fr) !important;
+    }
+    
+    .blogs-grid {
+        grid-template-columns: repeat(2, 1fr) !important;
+    }
+    
+    .practice-areas-grid {
+        grid-template-columns: repeat(2, 1fr) !important;
+    }
+    
+    .attorneys-grid {
+        grid-template-columns: repeat(2, 1fr) !important;
+    }
+}
+
+/* ============================================
+   LARGE DEVICES (Desktops, 1025px and up)
+   ============================================ */
+@media only screen and (min-width: 1025px) {
+    /* Ensure proper spacing and layout */
+    .container-fluid {
+        max-width: 1400px;
+        margin: 0 auto;
+    }
+}
+
+/* ============================================
+   LANDSCAPE ORIENTATION (Mobile Landscape)
+   ============================================ */
+@media only screen and (max-width: 768px) and (orientation: landscape) {
+    .hero {
+        min-height: 80vh !important;
+    }
+    
+    .hero-title {
+        font-size: 2rem !important;
+    }
+    
+    .hero-subtitle {
+        font-size: 0.95rem !important;
+    }
+    
+    .mobile-action-bar {
+        padding: 0.5rem 0 !important;
+    }
+    
+    .mobile-action {
+        padding: 0.75rem 0.5rem !important;
+        font-size: 0.75rem !important;
+    }
+}
+
+/* ============================================
+   TOUCH DEVICE OPTIMIZATIONS
+   ============================================ */
+@media (hover: none) and (pointer: coarse) {
+    /* Increase touch target sizes */
+    .btn, .nav-link, .mobile-action, .fab-btn {
+        min-height: 44px !important;
+        min-width: 44px !important;
+    }
+    
+    /* Remove hover effects on touch devices */
+    .service-card:hover,
+    .attorney-card:hover,
+    .testimonial-card:hover {
+        transform: none !important;
+    }
+    
+    /* Ensure clickable areas are large enough */
+    input[type="checkbox"],
+    input[type="radio"] {
+        width: 24px !important;
+        height: 24px !important;
+    }
+    
+    /* Improve form input spacing */
+    .form-group {
+        margin-bottom: 1.5rem !important;
+    }
+}
+
+/* ============================================
+   HIGH DPI DISPLAYS
+   ============================================ */
+@media only screen and (-webkit-min-device-pixel-ratio: 2),
+       only screen and (min-resolution: 192dpi) {
+    /* Ensure crisp rendering on retina displays */
+    .service-icon,
+    .stat-icon,
+    .attorney-image img {
+        image-rendering: -webkit-optimize-contrast;
+        image-rendering: crisp-edges;
+    }
+}
+
+/* ============================================
+   PRINT STYLES
+   ============================================ */
+@media print {
+    .navbar,
+    .mobile-action-bar,
+    .floating-actions,
+    .fab-btn,
+    .whatsapp-popup,
+    .exit-intent-popup,
+    footer {
+        display: none !important;
+    }
+    
+    .hero {
+        min-height: auto !important;
+        page-break-after: always;
+    }
+    
+    .section {
+        page-break-inside: avoid;
+    }
+}
+
+/* ============================================
+   ACCESSIBILITY IMPROVEMENTS FOR MOBILE
+   ============================================ */
+@media only screen and (max-width: 768px) {
+    /* Ensure sufficient color contrast */
+    .text-muted,
+    .text-gray {
+        color: var(--text-gray) !important;
+        opacity: 0.9 !important;
+    }
+    
+    /* Improve focus states for keyboard navigation */
+    .btn:focus,
+    .nav-link:focus,
+    input:focus,
+    textarea:focus,
+    select:focus {
+        outline: 3px solid var(--primary) !important;
+        outline-offset: 2px !important;
+    }
+    
+    /* Ensure readable line heights */
+    p, .service-description, .section-subtitle {
+        line-height: 1.7 !important;
+    }
+    
+    /* Improve spacing for readability */
+    .section-title {
+        margin-bottom: 1.5rem !important;
+    }
+    
+    .section-subtitle {
+        margin-bottom: 2rem !important;
+    }
+}
+
