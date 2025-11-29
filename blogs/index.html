@@ -1,0 +1,541 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="csrf-token" content=" ">
+    <title>Chawla & Co | Premier Legal Advocates</title>
+    <script>
+        // Prevent theme flash - apply theme immediately before page renders
+        (function() {
+            const theme = localStorage.getItem('theme') || 'dark';
+            document.documentElement.setAttribute('data-theme', theme);
+        })();
+    </script>
+    <meta name="description" content="Chawla & Co Advocates - Premier legal services in Nairobi, Kenya">
+    <meta name="keywords" content=" ">
+    <meta name="author" content="Chawla & Co Advocates">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="#">
+    
+    <!-- Local SEO Meta Tags -->
+    <meta name="geo.region" content="KE-110">
+    <meta name="geo.placename" content="Nairobi">
+    <meta name="geo.position" content="-1.2644;36.8219">
+    <meta name="ICBM" content="-1.2644, 36.8219">
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content=" ">
+    <meta property="og:title" content=" ">
+    <meta property="og:description" content=" ">
+    <meta property="og:locale" content="en_KE">
+    
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:url" content=" ">
+    <meta name="twitter:title" content=" ">
+    <meta name="twitter:description" content=" ">
+    
+    <link rel="icon" href="#" type="image/jpeg">
+    
+    <!-- External Stylesheets -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500;600;700&family=Inter:wght@300;400;500;600;700&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- External Scripts -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.2/dist/gsap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.2/dist/ScrollTrigger.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.2/dist/ScrollToPlugin.min.js"></script>
+    
+    <!-- Vite Assets -->
+    
+        <link rel="stylesheet" href="../assets/css/public.css">
+    <script type="module" src="../assets/js/public.js"></script>
+    
+    
+    
+    
+    <script type="application/ld+json">
+
+{
+  "@context" => ""https"://schema.org",
+  "@type" => "BreadcrumbList",
+  "itemListElement" => [
+    [
+      "@type" => "ListItem",
+      "position" => 1,
+      "name" => "Home",
+      "item" => index.html
+    ],
+    [
+      "@type" => "ListItem",
+      "position" => 2,
+      "name" => "Blogs",
+      "item" => ""->current()
+    ]
+  ]
+}
+
+</script>
+</head>
+<body>
+    <!-- Contact Information Bar -->
+<div class="contact-info-bar d-none d-lg-block">
+    <div class="container-fluid">
+        <div class="row justify-content-center">
+            <div class="col-auto">
+                <div class="contact-item me-4">
+                    <i class="fas fa-phone me-1"></i>
+                    <a href="tel:+254757709931" class="text-light text-decoration-none">0757 709931</a>
+                </div>
+            </div>
+            <div class="col-auto">
+                <div class="contact-item me-4">
+                    <i class="fas fa-map-marker-alt me-1"></i>
+                    <span class="text-light">Kanjata Road, Nairobi, Nairobi 00200, KE</span>
+                </div>
+            </div>
+            <div class="col-auto">
+                <div class="contact-item">
+                    <i class="fas fa-envelope me-1"></i>
+                    <a href="mailto:info@chawlaco.com" class="text-light text-decoration-none">info@chawlaco.com</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Main Navbar -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-transparent site-navbar">
+    <div class="container-fluid">
+        <a class="navbar-brand" href="../index.html">
+            <div class="brand-text d-none d-md-flex flex-column">
+                <span class="brand-name">Chawla &amp; Co Advocates</span>
+            </div>
+        </a>
+
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <!-- Mobile Contact Info (shown when navbar is expanded) -->
+            <div class="navbar-contact-info-mobile d-lg-none mb-3">
+                <div class="contact-item-mobile text-center mb-2">
+                    <i class="fas fa-phone me-1"></i>
+                    <a href="tel:+254757709931" class="text-light text-decoration-none">0757 709931</a>
+                </div>
+                <div class="contact-item-mobile text-center mb-2">
+                    <i class="fas fa-map-marker-alt me-1"></i>
+                    <span class="text-light">Kanjata Road, Nairobi, Nairobi 00200, KE</span>
+                </div>
+                <div class="contact-item-mobile text-center mb-3">
+                    <i class="fas fa-envelope me-1"></i>
+                    <a href="mailto:info@chawlaco.com" class="text-light text-decoration-none">info@chawlaco.com</a>
+                </div>
+                <!-- Mobile Theme Toggle -->
+                <div class="mobile-theme-toggle text-center">
+                    <button class="theme-toggle-btn-mobile" id="themeToggleMobile" aria-label="Toggle theme">
+                        <i class="fas fa-moon me-2" id="themeIconMobile"></i>
+                        <span>Dark Mode</span>
+                    </button>
+                </div>
+            </div>
+
+            <ul class="navbar-nav me-auto justify-content-center flex-grow-1">
+                <li class="nav-item">
+                    <a class="nav-link" href="../index.html">
+                        <span>Home</span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="../about.html">
+                        <span>About</span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="../practice-areas/">
+                        <span>Practice Areas</span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="../resources.html">
+                        <span>Resources</span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link active" href="index.html">
+                        <span>Blogs</span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="../contact.html">
+                        <span>Contact</span>
+                    </a>
+                </li>
+            </ul>
+            <div class="navbar-cta-group d-none d-lg-flex align-items-center">
+                <button class="theme-toggle-btn" id="themeToggle" aria-label="Toggle theme" title="Toggle Light/Dark Mode">
+                    <i class="fas fa-moon" id="themeIcon"></i>
+                </button>
+                <a href="#" class="btn btn-primary btn-sm">
+                    <i class="fas fa-calendar-check me-1"></i>
+                    <span>Book Appointment</span>
+                </a>
+            </div>
+            
+        </div>
+    </div>
+</nav>
+
+<!-- Mobile Quick Action Bar -->
+<div class="mobile-action-bar d-lg-none">
+    <a href="tel:+254757709931" class="mobile-action">
+        <i class="fas fa-phone"></i>
+        <span>Call Us</span>
+    </a>
+    <a href="https://wa.me/254757709931" target="_blank" rel="noopener" class="mobile-action">
+        <i class="fab fa-whatsapp"></i>
+        <span>WhatsApp</span>
+    </a>
+    <a href="#" class="mobile-action">
+        <i class="fas fa-calendar-check"></i>
+        <span>Book Appointment</span>
+    </a>
+</div>
+
+
+    <!-- Hero Section -->
+    <section class="blogs-hero">
+        <div class="bg-pattern"></div>
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+            <div class="hero-pre-title">Legal Insights & Updates</div>
+            <h1 class="hero-title">Stay <span>Informed</span></h1>
+            <p class="hero-subtitle">Expert legal analysis, practical advice, and the latest developments in Kenyan law.</p>
+        </div>
+    </section>
+
+    <!-- Search and Filter Section -->
+    <section class="blogs-filter-section">
+        <div class="bg-pattern"></div>
+        <div class="blogs-filter-container">
+            <!-- Search Bar -->
+            <div class="blogs-search-wrapper">
+                <div class="blogs-search-box">
+                    <i class="fas fa-search blogs-search-icon"></i>
+                    <input type="text" class="blogs-search-input" id="blogSearchInput" placeholder="Search articles by keyword, topic, or category...">
+                    <button class="blogs-search-btn" type="button" id="blogSearchBtn">
+                        <span>Search</span>
+                    </button>
+                </div>
+            </div>
+
+            <!-- Category Filters -->
+            <div class="blogs-categories">
+                <button class="blog-category-btn active" data-category="all">
+                    <span>All Articles</span>
+                </button>
+                <button class="blog-category-btn" data-category="corporate">
+                    <span>Corporate Law</span>
+                </button>
+                <button class="blog-category-btn" data-category="family">
+                    <span>Family Law</span>
+                </button>
+                <button class="blog-category-btn" data-category="estate">
+                    <span>Estate Planning</span>
+                </button>
+                <button class="blog-category-btn" data-category="employment">
+                    <span>Employment Law</span>
+                </button>
+                <button class="blog-category-btn" data-category="real-estate">
+                    <span>Real Estate</span>
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Main Content -->
+    <section class="section blogs-content-section">
+        <div class="bg-pattern"></div>
+        <div class="blogs-container">
+            <!-- Featured Blog Post -->
+            <div class="blog-featured fade-in">
+                <div class="blog-featured-image">
+                    <img src="https://images.unsplash.com/photo-1589829545856-d10d557cf95f?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80" alt="Understanding Contract Law in Kenya">
+                    <div class="blog-featured-badge">
+                        <i class="fas fa-star"></i>
+                        <span>Featured Article</span>
+                    </div>
+                </div>
+                <div class="blog-featured-content">
+                    <div class="blog-featured-meta">
+                        <span class="blog-category-tag" style="background: var(--primary);">Corporate Law</span>
+                        <span class="blog-date">December 15, 2025</span>
+                        <span class="blog-read-time">5 min read</span>
+                    </div>
+                    <h2 class="blog-featured-title">
+                        <a href="#">Understanding Contract Law in Kenya: Essential Guide for Businesses</a>
+                    </h2>
+                    <p class="blog-featured-excerpt">Contracts form the backbone of business relationships in Kenya. Understanding the legal framework, key provisions, and common pitfalls can protect your business interests and ensure successful commercial transactions. This comprehensive guide covers everything you need to know about contract law in Kenya.</p>
+                    <a href="#" class="btn btn-primary blog-featured-btn">
+                        <span>Read Full Article</span>
+                        <i class="fas fa-arrow-right"></i>
+                    </a>
+                </div>
+            </div>
+
+            <!-- Blog Grid -->
+            <div class="blogs-grid">
+                <!-- Blog Post 1 -->
+                <article class="blog-card fade-in" data-category="family">
+                    <div class="blog-card-image">
+                        <a href="#">
+                            <img src="https://images.unsplash.com/photo-1589829545856-d10d557cf95f?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Navigating the Divorce Process in Kenya">
+                        </a>
+                        <div class="blog-card-overlay">
+                            <i class="fas fa-arrow-right"></i>
+                        </div>
+                    </div>
+                    <div class="blog-card-content">
+                        <div class="blog-card-meta">
+                            <span class="blog-category-tag">Family Law</span>
+                            <span class="blog-date">Dec 10, 2025</span>
+                        </div>
+                        <h3 class="blog-card-title">
+                            <a href="#">Navigating the Divorce Process in Kenya: A Complete Guide</a>
+                        </h3>
+                        <p class="blog-card-excerpt">Divorce can be emotionally challenging and legally complex. Understanding the process, requirements, and your rights can help you navigate this difficult time with confidence.</p>
+                        <div class="blog-card-footer">
+                            <span class="blog-read-time">
+                                <i class="far fa-clock"></i>
+                                4 min read
+                            </span>
+                            <a href="#" class="blog-read-more">
+                                Read More
+                                <i class="fas fa-arrow-right"></i>
+                            </a>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Blog Post 2 -->
+                <article class="blog-card fade-in" data-category="estate">
+                    <div class="blog-card-image">
+                        <a href="#">
+                            <img src="https://images.unsplash.com/photo-1554224155-6726b3ff858f?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Estate Planning Essentials">
+                        </a>
+                        <div class="blog-card-overlay">
+                            <i class="fas fa-arrow-right"></i>
+                        </div>
+                    </div>
+                    <div class="blog-card-content">
+                        <div class="blog-card-meta">
+                            <span class="blog-category-tag">Estate Planning</span>
+                            <span class="blog-date">Dec 5, 2025</span>
+                        </div>
+                        <h3 class="blog-card-title">
+                            <a href="#">Estate Planning Essentials: Protecting Your Family's Future</a>
+                        </h3>
+                        <p class="blog-card-excerpt">Estate planning goes beyond writing a will. Learn about trusts, powers of attorney, and other essential tools to protect your family's future and ensure your wishes are carried out.</p>
+                        <div class="blog-card-footer">
+                            <span class="blog-read-time">
+                                <i class="far fa-clock"></i>
+                                6 min read
+                            </span>
+                            <a href="#" class="blog-read-more">
+                                Read More
+                                <i class="fas fa-arrow-right"></i>
+                            </a>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Blog Post 3 -->
+                <article class="blog-card fade-in" data-category="employment">
+                    <div class="blog-card-image">
+                        <a href="#">
+                            <img src="https://images.unsplash.com/photo-1521791136064-7986c2920216?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Employment Rights in Kenya">
+                        </a>
+                        <div class="blog-card-overlay">
+                            <i class="fas fa-arrow-right"></i>
+                        </div>
+                    </div>
+                    <div class="blog-card-content">
+                        <div class="blog-card-meta">
+                            <span class="blog-category-tag">Employment Law</span>
+                            <span class="blog-date">Nov 28, 2025</span>
+                        </div>
+                        <h3 class="blog-card-title">
+                            <a href="#">Employment Rights in Kenya 2025: What You Need to Know</a>
+                        </h3>
+                        <p class="blog-card-excerpt">Recent changes to employment law in Kenya affect both employers and employees. Stay informed about your rights, obligations, and the latest legal developments.</p>
+                        <div class="blog-card-footer">
+                            <span class="blog-read-time">
+                                <i class="far fa-clock"></i>
+                                4 min read
+                            </span>
+                            <a href="#" class="blog-read-more">
+                                Read More
+                                <i class="fas fa-arrow-right"></i>
+                            </a>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Blog Post 4 -->
+                <article class="blog-card fade-in" data-category="real-estate">
+                    <div class="blog-card-image">
+                        <a href="#">
+                            <img src="https://images.unsplash.com/photo-1560518883-ce09059eeffa?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Property Registration Process">
+                        </a>
+                        <div class="blog-card-overlay">
+                            <i class="fas fa-arrow-right"></i>
+                        </div>
+                    </div>
+                    <div class="blog-card-content">
+                        <div class="blog-card-meta">
+                            <span class="blog-category-tag">Real Estate Law</span>
+                            <span class="blog-date">Nov 20, 2025</span>
+                        </div>
+                        <h3 class="blog-card-title">
+                            <a href="#">Property Registration Process in Kenya: Complete Guide</a>
+                        </h3>
+                        <p class="blog-card-excerpt">Buying property in Kenya involves several legal steps. This guide walks you through the registration process, required documents, and common challenges to avoid.</p>
+                        <div class="blog-card-footer">
+                            <span class="blog-read-time">
+                                <i class="far fa-clock"></i>
+                                5 min read
+                            </span>
+                            <a href="#" class="blog-read-more">
+                                Read More
+                                <i class="fas fa-arrow-right"></i>
+                            </a>
+                        </div>
+                    </div>
+                </article>
+            </div>
+
+            <!-- Pagination -->
+            <div class="blogs-pagination">
+                <button class="pagination-btn pagination-prev" disabled>
+                    <i class="fas fa-chevron-left"></i>
+                    <span>Previous</span>
+                </button>
+                <div class="pagination-numbers">
+                    <button class="pagination-number active">1</button>
+                    <button class="pagination-number">2</button>
+                    <button class="pagination-number">3</button>
+                    <span class="pagination-ellipsis">...</span>
+                    <button class="pagination-number">10</button>
+                </div>
+                <button class="pagination-btn pagination-next">
+                    <span>Next</span>
+                    <i class="fas fa-chevron-right"></i>
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Newsletter CTA Section -->
+    <section class="section blogs-newsletter-section">
+        <div class="bg-pattern"></div>
+        <div class="blogs-newsletter-container">
+            <div class="blogs-newsletter-icon">
+                <i class="fas fa-envelope-open-text"></i>
+            </div>
+            <h2 class="blogs-newsletter-title">Stay Updated with Legal Insights</h2>
+            <p class="blogs-newsletter-description">Subscribe to our newsletter and receive expert legal advice, industry updates, and practical tips delivered to your inbox.</p>
+            <form class="blogs-newsletter-form" id="blogsNewsletterForm">
+                
+                <div class="newsletter-input-wrapper">
+                    <input type="email" class="newsletter-input" placeholder="Enter your email address" required>
+                    <button type="submit" class="newsletter-submit-btn">
+                        <span>Subscribe</span>
+                        <i class="fas fa-arrow-right"></i>
+                    </button>
+                </div>
+            </form>
+        </div>
+    </section>
+
+    <footer>
+    <div class="footer-container">
+        <div class="footer-col">
+            <h3>CHAWLA & CO</h3>
+            <p>For over 25 years, we have provided exceptional legal services with integrity, dedication, and an unwavering commitment to client success. Our legacy of excellence continues to define the standard for legal representation.</p>
+            <div class="social-links">
+                <a href="#" class="social-link"><i class="fab fa-facebook-f"></i></a>
+                <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
+                <a href="#" class="social-link"><i class="fab fa-linkedin-in"></i></a>
+                <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
+            </div>
+        </div>
+        <div class="footer-col">
+            <h3>Practice Areas</h3>
+            <ul class="footer-links">
+                <li><a href="#">Corporate Law</a></li>
+                <li><a href="#">Real Estate Law</a></li>
+                <li><a href="#">Family Law</a></li>
+                <li><a href="#">Estate Planning</a></li>
+                <li><a href="#">Litigation</a></li>
+                <li><a href="#">Employment Law</a></li>
+            </ul>
+        </div>
+        <div class="footer-col">
+            <h3>Quick Links</h3>
+            <ul class="footer-links">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#services">Our Services</a></li>
+                <li><a href="#attorneys">Our Attorneys</a></li>
+                <li><a href="#testimonials">Testimonials</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </div>
+        <div class="footer-col">
+            <h3>Contact Us</h3>
+            <ul class="footer-links">
+                <li><i class="fas fa-map-marker-alt"></i> <a href="#">Kanjata Road, Nairobi, Nairobi 00200, KE</a></li>
+                <li><i class="fas fa-phone"></i> <a href="#">0757 709931</a></li>
+                <li><i class="fas fa-envelope"></i> <a href="#">info@chawlaco.com</a></li>
+                <li><i class="fas fa-clock"></i> <a href="#">Mon-Fri: 8:00 AM - 6:00 PM</a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="footer-bottom">
+        <p>&copy;  Chawla & Co Advocates. All Rights Reserved. | <a href="#" style="color: var(--text-gray);">Privacy Policy</a> | <a href="#" style="color: var(--text-gray);">Terms of Use</a></p>
+    </div>
+</footer>
+    
+    <!-- Exit-Intent Popup -->
+    <div class="exit-intent-overlay" id="exitIntentOverlay"></div>
+    <div class="exit-intent-popup" id="exitIntentPopup">
+        <button class="exit-intent-close" id="exitIntentClose">
+            <i class="fas fa-times"></i>
+        </button>
+        <div class="exit-intent-content">
+            <div class="exit-intent-icon">
+                <i class="fas fa-gift"></i>
+            </div>
+            <h2 class="exit-intent-title">Free 30-Minute Consultation</h2>
+            <p class="exit-intent-description">Book your free consultation with our expert legal team today.</p>
+            <div class="exit-intent-actions">
+                <a href="/book-appointment" class="btn btn-primary exit-intent-cta">
+                    Book Now
+                </a>
+                <button class="exit-intent-dismiss" id="exitIntentDismiss">
+                    Maybe Later
+                </button>
+            </div>
+        </div>
+    </div>
+    
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
+

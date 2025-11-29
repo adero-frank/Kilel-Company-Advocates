@@ -1,0 +1,474 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="csrf-token" content=" ">
+    <title>Chawla & Co | Premier Legal Advocates</title>
+    <script>
+        // Prevent theme flash - apply theme immediately before page renders
+        (function() {
+            const theme = localStorage.getItem('theme') || 'dark';
+            document.documentElement.setAttribute('data-theme', theme);
+        })();
+    </script>
+    <meta name="description" content="Chawla & Co Advocates - Premier legal services in Nairobi, Kenya">
+    <meta name="keywords" content=" ">
+    <meta name="author" content="Chawla & Co Advocates">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="#">
+    
+    <!-- Local SEO Meta Tags -->
+    <meta name="geo.region" content="KE-110">
+    <meta name="geo.placename" content="Nairobi">
+    <meta name="geo.position" content="-1.2644;36.8219">
+    <meta name="ICBM" content="-1.2644, 36.8219">
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content=" ">
+    <meta property="og:title" content=" ">
+    <meta property="og:description" content=" ">
+    <meta property="og:locale" content="en_KE">
+    
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:url" content=" ">
+    <meta name="twitter:title" content=" ">
+    <meta name="twitter:description" content=" ">
+    
+    <link rel="icon" href="#" type="image/jpeg">
+    
+    <!-- External Stylesheets -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500;600;700&family=Inter:wght@300;400;500;600;700&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- External Scripts -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.2/dist/gsap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.2/dist/ScrollTrigger.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.2/dist/ScrollToPlugin.min.js"></script>
+    
+    <!-- Vite Assets -->
+    
+        <link rel="stylesheet" href="../assets/css/public.css">
+    <script type="module" src="../assets/js/public.js"></script>
+    
+    
+    
+    
+    <script type="application/ld+json">
+
+{
+  "@context" => ""https"://schema.org",
+  "@type" => "BreadcrumbList",
+  "itemListElement" => [
+    [
+      "@type" => "ListItem",
+      "position" => 1,
+      "name" => "Home",
+      "item" => index.html
+    ],
+    [
+      "@type" => "ListItem",
+      "position" => 2,
+      "name" => "Practice Areas",
+      "item" => ""->current()
+    ]
+  ]
+}
+
+</script>
+</head>
+<body>
+    <!-- Contact Information Bar -->
+<div class="contact-info-bar d-none d-lg-block">
+    <div class="container-fluid">
+        <div class="row justify-content-center">
+            <div class="col-auto">
+                <div class="contact-item me-4">
+                    <i class="fas fa-phone me-1"></i>
+                    <a href="tel:+254757709931" class="text-light text-decoration-none">0757 709931</a>
+                </div>
+            </div>
+            <div class="col-auto">
+                <div class="contact-item me-4">
+                    <i class="fas fa-map-marker-alt me-1"></i>
+                    <span class="text-light">Kanjata Road, Nairobi, Nairobi 00200, KE</span>
+                </div>
+            </div>
+            <div class="col-auto">
+                <div class="contact-item">
+                    <i class="fas fa-envelope me-1"></i>
+                    <a href="mailto:info@chawlaco.com" class="text-light text-decoration-none">info@chawlaco.com</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Main Navbar -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-transparent site-navbar">
+    <div class="container-fluid">
+        <a class="navbar-brand" href="../index.html">
+            <div class="brand-text d-none d-md-flex flex-column">
+                <span class="brand-name">Chawla &amp; Co Advocates</span>
+            </div>
+        </a>
+
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <!-- Mobile Contact Info (shown when navbar is expanded) -->
+            <div class="navbar-contact-info-mobile d-lg-none mb-3">
+                <div class="contact-item-mobile text-center mb-2">
+                    <i class="fas fa-phone me-1"></i>
+                    <a href="tel:+254757709931" class="text-light text-decoration-none">0757 709931</a>
+                </div>
+                <div class="contact-item-mobile text-center mb-2">
+                    <i class="fas fa-map-marker-alt me-1"></i>
+                    <span class="text-light">Kanjata Road, Nairobi, Nairobi 00200, KE</span>
+                </div>
+                <div class="contact-item-mobile text-center mb-3">
+                    <i class="fas fa-envelope me-1"></i>
+                    <a href="mailto:info@chawlaco.com" class="text-light text-decoration-none">info@chawlaco.com</a>
+                </div>
+                <!-- Mobile Theme Toggle -->
+                <div class="mobile-theme-toggle text-center">
+                    <button class="theme-toggle-btn-mobile" id="themeToggleMobile" aria-label="Toggle theme">
+                        <i class="fas fa-moon me-2" id="themeIconMobile"></i>
+                        <span>Dark Mode</span>
+                    </button>
+                </div>
+            </div>
+
+            <ul class="navbar-nav me-auto justify-content-center flex-grow-1">
+                <li class="nav-item">
+                    <a class="nav-link" href="../index.html">
+                        <span>Home</span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="../about.html">
+                        <span>About</span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link active" href="index.html">
+                        <span>Practice Areas</span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="../resources.html">
+                        <span>Resources</span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="../blogs/index.html">
+                        <span>Blogs</span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="../contact.html">
+                        <span>Contact</span>
+                    </a>
+                </li>
+            </ul>
+            <div class="navbar-cta-group d-none d-lg-flex align-items-center">
+                <button class="theme-toggle-btn" id="themeToggle" aria-label="Toggle theme" title="Toggle Light/Dark Mode">
+                    <i class="fas fa-moon" id="themeIcon"></i>
+                </button>
+                <a href="#" class="btn btn-primary btn-sm">
+                    <i class="fas fa-calendar-check me-1"></i>
+                    <span>Book Appointment</span>
+                </a>
+            </div>
+            
+        </div>
+    </div>
+</nav>
+
+<!-- Mobile Quick Action Bar -->
+<div class="mobile-action-bar d-lg-none">
+    <a href="tel:+254757709931" class="mobile-action">
+        <i class="fas fa-phone"></i>
+        <span>Call Us</span>
+    </a>
+    <a href="https://wa.me/254757709931" target="_blank" rel="noopener" class="mobile-action">
+        <i class="fab fa-whatsapp"></i>
+        <span>WhatsApp</span>
+    </a>
+    <a href="#" class="mobile-action">
+        <i class="fas fa-calendar-check"></i>
+        <span>Book Appointment</span>
+    </a>
+</div>
+
+
+    <!-- Hero Section -->
+    <section class="hero" style="height: 60vh; min-height: 480px;">
+        <div class="bg-pattern"></div>
+        <div class="hero-content">
+            <div class="hero-pre-title">Legal Expertise</div>
+            <h1 class="hero-title">Our <span>Practice</span> Areas</h1>
+            <p class="hero-subtitle">Comprehensive legal solutions across diverse practice areas, delivered with excellence and integrity.</p>
+        </div>
+    </section>
+
+    <!-- Introduction Section -->
+    <section class="section">
+        <div class="bg-pattern"></div>
+        <h2 class="section-title">Comprehensive <span>Legal Solutions</span></h2>
+        <p class="section-subtitle">We provide expert legal counsel across a wide range of practice areas, combining deep expertise with personalized service.</p>
+        <div class="section-divider"></div>
+
+        <div class="about-container">
+            <div class="about-content">
+                <p>Since our founding in 1985, our attorneys have specialized in various areas of law, with particular expertise in Banking & Securities Law. As a partnership with 11-50 professionals, we offer strategic counsel and effective representation. Each practice area is led by experienced professionals who understand the unique challenges and opportunities within their field.</p>
+                <p>We approach every case with diligence, creativity, and a commitment to achieving the best possible outcomes for our clients. Whether you're an individual, business, or institution, we have the expertise to address your legal needs.</p>
+
+                <div class="stats-grid" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 2rem; margin-top: 3rem;">
+                    <div class="stat-item" style="text-align: center;">
+                        <div style="font-size: 2.5rem; font-weight: 700; color: var(--primary); margin-bottom: 0.5rem;">150+</div>
+                        <div style="color: var(--text-light); font-size: 0.9rem;">Cases Resolved</div>
+                    </div>
+                    <div class="stat-item" style="text-align: center;">
+                        <div style="font-size: 2.5rem; font-weight: 700; color: var(--primary); margin-bottom: 0.5rem;">40+</div>
+                        <div style="color: var(--text-light); font-size: 0.9rem;">Years Experience</div>
+                    </div>
+                    <div class="stat-item" style="text-align: center;">
+                        <div style="font-size: 2.5rem; font-weight: 700; color: var(--primary); margin-bottom: 0.5rem;">98%</div>
+                        <div style="color: var(--text-light); font-size: 0.9rem;">Client Satisfaction</div>
+                    </div>
+                </div>
+            </div>
+            <div class="about-visual">
+                <div class="about-image">
+                    <img src="https://images.unsplash.com/photo-1589829545856-d10d557cf95f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=600&q=80" alt="Professional Legal Consultation" class="about-main-image">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Practice Areas Grid -->
+    <section class="section" id="practice-areas">
+        <div class="bg-pattern"></div>
+        <h2 class="section-title">Our <span>Practice Areas</span></h2>
+        <p class="section-subtitle">Explore our specialized legal services and find the expertise you need.</p>
+        <div class="section-divider"></div>
+
+        <div class="services-grid" style="max-width: 1200px; margin: 0 auto;">
+            <!-- Corporate Law -->
+            <div class="service-card fade-in">
+                <div class="service-icon">
+                    <i class="fas fa-building"></i>
+                </div>
+                <h3 class="service-title">Corporate Law</h3>
+                <p class="service-description">Comprehensive corporate legal services including business formation, governance, mergers, acquisitions, and regulatory compliance.</p>
+                <ul style="list-style: none; padding: 0; margin: 1rem 0; color: var(--text-gray); font-size: 0.9rem;">
+                    <li style="margin-bottom: 0.5rem;"><i class="fas fa-check" style="color: var(--primary); margin-right: 0.5rem;"></i>Business Formation & Registration</li>
+                    <li style="margin-bottom: 0.5rem;"><i class="fas fa-check" style="color: var(--primary); margin-right: 0.5rem;"></i>Corporate Governance</li>
+                    <li style="margin-bottom: 0.5rem;"><i class="fas fa-check" style="color: var(--primary); margin-right: 0.5rem;"></i>Mergers & Acquisitions</li>
+                </ul>
+                <a href="corporate-law.html" class="btn btn-primary" style="margin-top: 1rem;">Learn More</a>
+            </div>
+
+            <!-- Real Estate Law -->
+            <div class="service-card fade-in">
+                <div class="service-icon">
+                    <i class="fas fa-home"></i>
+                </div>
+                <h3 class="service-title">Real Estate Law</h3>
+                <p class="service-description">Expert guidance on property transactions, land disputes, leasing agreements, and real estate development projects.</p>
+                <ul style="list-style: none; padding: 0; margin: 1rem 0; color: var(--text-gray); font-size: 0.9rem;">
+                    <li style="margin-bottom: 0.5rem;"><i class="fas fa-check" style="color: var(--primary); margin-right: 0.5rem;"></i>Property Transactions</li>
+                    <li style="margin-bottom: 0.5rem;"><i class="fas fa-check" style="color: var(--primary); margin-right: 0.5rem;"></i>Land Disputes & Litigation</li>
+                    <li style="margin-bottom: 0.5rem;"><i class="fas fa-check" style="color: var(--primary); margin-right: 0.5rem;"></i>Leasing & Development</li>
+                </ul>
+                <a href="real-estate-law.html" class="btn btn-primary" style="margin-top: 1rem;">Learn More</a>
+            </div>
+
+            <!-- Family Law -->
+            <div class="service-card fade-in">
+                <div class="service-icon">
+                    <i class="fas fa-users"></i>
+                </div>
+                <h3 class="service-title">Family Law</h3>
+                <p class="service-description">Compassionate and effective representation in divorce, child custody, adoption, and other family-related legal matters.</p>
+                <ul style="list-style: none; padding: 0; margin: 1rem 0; color: var(--text-gray); font-size: 0.9rem;">
+                    <li style="margin-bottom: 0.5rem;"><i class="fas fa-check" style="color: var(--primary); margin-right: 0.5rem;"></i>Divorce & Separation</li>
+                    <li style="margin-bottom: 0.5rem;"><i class="fas fa-check" style="color: var(--primary); margin-right: 0.5rem;"></i>Child Custody & Support</li>
+                    <li style="margin-bottom: 0.5rem;"><i class="fas fa-check" style="color: var(--primary); margin-right: 0.5rem;"></i>Adoption & Guardianship</li>
+                </ul>
+                <a href="family-law.html" class="btn btn-primary" style="margin-top: 1rem;">Learn More</a>
+            </div>
+
+            <!-- Estate Planning -->
+            <div class="service-card fade-in">
+                <div class="service-icon">
+                    <i class="fas fa-file-contract"></i>
+                </div>
+                <h3 class="service-title">Estate Planning</h3>
+                <p class="service-description">Comprehensive estate planning services including wills, trusts, probate, and succession planning for individuals and families.</p>
+                <ul style="list-style: none; padding: 0; margin: 1rem 0; color: var(--text-gray); font-size: 0.9rem;">
+                    <li style="margin-bottom: 0.5rem;"><i class="fas fa-check" style="color: var(--primary); margin-right: 0.5rem;"></i>Wills & Testament</li>
+                    <li style="margin-bottom: 0.5rem;"><i class="fas fa-check" style="color: var(--primary); margin-right: 0.5rem;"></i>Trusts & Estate Planning</li>
+                    <li style="margin-bottom: 0.5rem;"><i class="fas fa-check" style="color: var(--primary); margin-right: 0.5rem;"></i>Probate & Administration</li>
+                </ul>
+                <a href="estate-planning.html" class="btn btn-primary" style="margin-top: 1rem;">Learn More</a>
+            </div>
+
+            <!-- Litigation -->
+            <div class="service-card fade-in">
+                <div class="service-icon">
+                    <i class="fas fa-gavel"></i>
+                </div>
+                <h3 class="service-title">Litigation</h3>
+                <p class="service-description">Aggressive and strategic representation in civil and commercial litigation, arbitration, and alternative dispute resolution.</p>
+                <ul style="list-style: none; padding: 0; margin: 1rem 0; color: var(--text-gray); font-size: 0.9rem;">
+                    <li style="margin-bottom: 0.5rem;"><i class="fas fa-check" style="color: var(--primary); margin-right: 0.5rem;"></i>Civil Litigation</li>
+                    <li style="margin-bottom: 0.5rem;"><i class="fas fa-check" style="color: var(--primary); margin-right: 0.5rem;"></i>Commercial Disputes</li>
+                    <li style="margin-bottom: 0.5rem;"><i class="fas fa-check" style="color: var(--primary); margin-right: 0.5rem;"></i>Arbitration & Mediation</li>
+                </ul>
+                <a href="litigation.html" class="btn btn-primary" style="margin-top: 1rem;">Learn More</a>
+            </div>
+
+            <!-- Employment Law -->
+            <div class="service-card fade-in">
+                <div class="service-icon">
+                    <i class="fas fa-briefcase"></i>
+                </div>
+                <h3 class="service-title">Employment Law</h3>
+                <p class="service-description">Expert counsel on employment contracts, workplace disputes, labor relations, and compliance with employment legislation.</p>
+                <ul style="list-style: none; padding: 0; margin: 1rem 0; color: var(--text-gray); font-size: 0.9rem;">
+                    <li style="margin-bottom: 0.5rem;"><i class="fas fa-check" style="color: var(--primary); margin-right: 0.5rem;"></i>Employment Contracts</li>
+                    <li style="margin-bottom: 0.5rem;"><i class="fas fa-check" style="color: var(--primary); margin-right: 0.5rem;"></i>Workplace Disputes</li>
+                    <li style="margin-bottom: 0.5rem;"><i class="fas fa-check" style="color: var(--primary); margin-right: 0.5rem;"></i>Labor Relations</li>
+                </ul>
+                <a href="employment-law.html" class="btn btn-primary" style="margin-top: 1rem;">Learn More</a>
+            </div>
+        </div>
+
+    <!-- Why Choose Us Section -->
+    <section class="section">
+        <div class="bg-pattern"></div>
+        <h2 class="section-title">Why Choose <span>Our Firm</span></h2>
+        <p class="section-subtitle">What sets Chawla & Co Advocates apart in delivering exceptional legal services.</p>
+        <div class="section-divider"></div>
+
+        <div class="services-grid" style="max-width: 1000px; margin: 0 auto;">
+            <div class="service-card fade-in">
+                <div class="service-icon">
+                    <i class="fas fa-award"></i>
+                </div>
+                <h3 class="service-title">Proven Track Record</h3>
+                <p class="service-description">Successful case resolution across all practice areas since 1985, with a 98% client satisfaction rate.</p>
+            </div>
+            <div class="service-card fade-in">
+                <div class="service-icon">
+                    <i class="fas fa-handshake"></i>
+                </div>
+                <h3 class="service-title">Personalized Approach</h3>
+                <p class="service-description">We understand that every client and case is unique, providing tailored legal strategies for optimal results.</p>
+            </div>
+            <div class="service-card fade-in">
+                <div class="service-icon">
+                    <i class="fas fa-clock"></i>
+                </div>
+                <h3 class="service-title">Timely Resolution</h3>
+                <p class="service-description">Efficient case management and clear communication ensure swift resolution without compromising quality.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Call to Action -->
+    <section class="section cta-section">
+        <div class="bg-pattern"></div>
+        <h2 class="cta-title">Need Legal Assistance in a <span>Specific Area?</span></h2>
+        <p class="cta-description">Contact us today for a confidential consultation. Our experienced attorneys are ready to help with your legal needs.</p>
+        <div style="text-align: center; margin-top: 2rem;">
+            <a href="#" class="btn btn-primary" style="margin-right: 1rem;">Schedule Consultation</a>
+            <a href="tel:+254757709931" class="btn btn-secondary">Call Now: 0757 709931</a>
+        </div>
+    </section>
+
+    <footer>
+    <div class="footer-container">
+        <div class="footer-col">
+            <h3>CHAWLA & CO</h3>
+            <p>For over 25 years, we have provided exceptional legal services with integrity, dedication, and an unwavering commitment to client success. Our legacy of excellence continues to define the standard for legal representation.</p>
+            <div class="social-links">
+                <a href="#" class="social-link"><i class="fab fa-facebook-f"></i></a>
+                <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
+                <a href="#" class="social-link"><i class="fab fa-linkedin-in"></i></a>
+                <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
+            </div>
+        </div>
+        <div class="footer-col">
+            <h3>Practice Areas</h3>
+            <ul class="footer-links">
+                <li><a href="corporate-law.html">Corporate Law</a></li>
+                <li><a href="real-estate-law.html">Real Estate Law</a></li>
+                <li><a href="family-law.html">Family Law</a></li>
+                <li><a href="estate-planning.html">Estate Planning</a></li>
+                <li><a href="litigation.html">Litigation</a></li>
+                <li><a href="employment-law.html">Employment Law</a></li>
+            </ul>
+        </div>
+        <div class="footer-col">
+            <h3>Quick Links</h3>
+            <ul class="footer-links">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#services">Our Services</a></li>
+                <li><a href="#attorneys">Our Attorneys</a></li>
+                <li><a href="#testimonials">Testimonials</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </div>
+        <div class="footer-col">
+            <h3>Contact Us</h3>
+            <ul class="footer-links">
+                <li><i class="fas fa-map-marker-alt"></i> <a href="#">Kanjata Road, Nairobi, Nairobi 00200, KE</a></li>
+                <li><i class="fas fa-phone"></i> <a href="#">0757 709931</a></li>
+                <li><i class="fas fa-envelope"></i> <a href="#">info@chawlaco.com</a></li>
+                <li><i class="fas fa-clock"></i> <a href="#">Mon-Fri: 8:00 AM - 6:00 PM</a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="footer-bottom">
+        <p>&copy;  Chawla & Co Advocates. All Rights Reserved. | <a href="#" style="color: var(--text-gray);">Privacy Policy</a> | <a href="#" style="color: var(--text-gray);">Terms of Use</a></p>
+    </div>
+</footer>
+    
+    <!-- Exit-Intent Popup -->
+    <div class="exit-intent-overlay" id="exitIntentOverlay"></div>
+    <div class="exit-intent-popup" id="exitIntentPopup">
+        <button class="exit-intent-close" id="exitIntentClose">
+            <i class="fas fa-times"></i>
+        </button>
+        <div class="exit-intent-content">
+            <div class="exit-intent-icon">
+                <i class="fas fa-gift"></i>
+            </div>
+            <h2 class="exit-intent-title">Free 30-Minute Consultation</h2>
+            <p class="exit-intent-description">Book your free consultation with our expert legal team today.</p>
+            <div class="exit-intent-actions">
+                <a href="/book-appointment" class="btn btn-primary exit-intent-cta">
+                    Book Now
+                </a>
+                <button class="exit-intent-dismiss" id="exitIntentDismiss">
+                    Maybe Later
+                </button>
+            </div>
+        </div>
+    </div>
+    
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
+

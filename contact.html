@@ -1,0 +1,701 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="csrf-token" content=" ">
+    <title>Chawla & Co | Premier Legal Advocates</title>
+    <script>
+        // Prevent theme flash - apply theme immediately before page renders
+        (function() {
+            const theme = localStorage.getItem('theme') || 'dark';
+            document.documentElement.setAttribute('data-theme', theme);
+        })();
+    </script>
+    <meta name="description" content="Chawla & Co Advocates - Premier legal services in Nairobi, Kenya">
+    <meta name="keywords" content=" ">
+    <meta name="author" content="Chawla & Co Advocates">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="#">
+    
+    <!-- Local SEO Meta Tags -->
+    <meta name="geo.region" content="KE-110">
+    <meta name="geo.placename" content="Nairobi">
+    <meta name="geo.position" content="-1.2644;36.8219">
+    <meta name="ICBM" content="-1.2644, 36.8219">
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content=" ">
+    <meta property="og:title" content=" ">
+    <meta property="og:description" content=" ">
+    <meta property="og:locale" content="en_KE">
+    
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:url" content=" ">
+    <meta name="twitter:title" content=" ">
+    <meta name="twitter:description" content=" ">
+    
+    <link rel="icon" href="#" type="image/jpeg">
+    
+    <!-- External Stylesheets -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500;600;700&family=Inter:wght@300;400;500;600;700&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- External Scripts -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.2/dist/gsap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.2/dist/ScrollTrigger.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.2/dist/ScrollToPlugin.min.js"></script>
+    
+    <!-- Vite Assets -->
+    
+        <link rel="stylesheet" href="assets/css/public.css">
+    <script type="module" src="assets/js/public.js"></script>
+    
+    
+    
+    
+    <script type="application/ld+json">
+
+{
+  "@context" => ""https"://schema.org",
+  "@type" => "BreadcrumbList",
+  "itemListElement" => [
+    [
+      "@type" => "ListItem",
+      "position" => 1,
+      "name" => "Home",
+      "item" => index.html
+    ],
+    [
+      "@type" => "ListItem",
+      "position" => 2,
+      "name" => "Contact Us",
+      "item" => ""->current()
+    ]
+  ]
+}
+
+</script>
+</head>
+<body>
+    <!-- Contact Information Bar -->
+<div class="contact-info-bar d-none d-lg-block">
+    <div class="container-fluid">
+        <div class="row justify-content-center">
+            <div class="col-auto">
+                <div class="contact-item me-4">
+                    <i class="fas fa-phone me-1"></i>
+                    <a href="tel:+254757709931" class="text-light text-decoration-none">0757 709931</a>
+                </div>
+            </div>
+            <div class="col-auto">
+                <div class="contact-item me-4">
+                    <i class="fas fa-map-marker-alt me-1"></i>
+                    <span class="text-light">Kanjata Road, Nairobi, Nairobi 00200, KE</span>
+                </div>
+            </div>
+            <div class="col-auto">
+                <div class="contact-item">
+                    <i class="fas fa-envelope me-1"></i>
+                    <a href="mailto:info@chawlaco.com" class="text-light text-decoration-none">info@chawlaco.com</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Main Navbar -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-transparent site-navbar">
+    <div class="container-fluid">
+        <a class="navbar-brand" href="index.html">
+            <div class="brand-text d-none d-md-flex flex-column">
+                <span class="brand-name">Chawla &amp; Co Advocates</span>
+            </div>
+        </a>
+
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <!-- Mobile Contact Info (shown when navbar is expanded) -->
+            <div class="navbar-contact-info-mobile d-lg-none mb-3">
+                <div class="contact-item-mobile text-center mb-2">
+                    <i class="fas fa-phone me-1"></i>
+                    <a href="tel:+254757709931" class="text-light text-decoration-none">0757 709931</a>
+                </div>
+                <div class="contact-item-mobile text-center mb-2">
+                    <i class="fas fa-map-marker-alt me-1"></i>
+                    <span class="text-light">Kanjata Road, Nairobi, Nairobi 00200, KE</span>
+                </div>
+                <div class="contact-item-mobile text-center mb-3">
+                    <i class="fas fa-envelope me-1"></i>
+                    <a href="mailto:info@chawlaco.com" class="text-light text-decoration-none">info@chawlaco.com</a>
+                </div>
+                <!-- Mobile Theme Toggle -->
+                <div class="mobile-theme-toggle text-center">
+                    <button class="theme-toggle-btn-mobile" id="themeToggleMobile" aria-label="Toggle theme">
+                        <i class="fas fa-moon me-2" id="themeIconMobile"></i>
+                        <span>Dark Mode</span>
+                    </button>
+                </div>
+            </div>
+
+            <ul class="navbar-nav me-auto justify-content-center flex-grow-1">
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html">
+                        <span>Home</span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="about.html">
+                        <span>About</span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="practice-areas/">
+                        <span>Practice Areas</span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="resources.html">
+                        <span>Resources</span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="blogs/index.html">
+                        <span>Blogs</span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link active" href="contact.html">
+                        <span>Contact</span>
+                    </a>
+                </li>
+            </ul>
+            <div class="navbar-cta-group d-none d-lg-flex align-items-center">
+                <button class="theme-toggle-btn" id="themeToggle" aria-label="Toggle theme" title="Toggle Light/Dark Mode">
+                    <i class="fas fa-moon" id="themeIcon"></i>
+                </button>
+                <a href="#" class="btn btn-primary btn-sm">
+                    <i class="fas fa-calendar-check me-1"></i>
+                    <span>Book Appointment</span>
+                </a>
+            </div>
+            
+        </div>
+    </div>
+</nav>
+
+<!-- Mobile Quick Action Bar -->
+<div class="mobile-action-bar d-lg-none">
+    <a href="tel:+254757709931" class="mobile-action">
+        <i class="fas fa-phone"></i>
+        <span>Call Us</span>
+    </a>
+    <a href="https://wa.me/254757709931" target="_blank" rel="noopener" class="mobile-action">
+        <i class="fab fa-whatsapp"></i>
+        <span>WhatsApp</span>
+    </a>
+    <a href="#" class="mobile-action">
+        <i class="fas fa-calendar-check"></i>
+        <span>Book Appointment</span>
+    </a>
+</div>
+
+
+    <!-- Contact Hero Section -->
+    <section class="contact-hero">
+        <div class="bg-pattern"></div>
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+            <div class="hero-pre-title">Get in Touch</div>
+            <h1 class="hero-title">Contact <span>Our</span> Team</h1>
+            <p class="hero-subtitle">We're here to help. Reach out to us through any of the methods below, and we'll respond promptly to assist with your legal needs.</p>
+            <div class="hero-trust-indicators">
+                <span class="trust-item">
+                    <i class="fas fa-clock"></i>
+                    <span>24/7 Emergency Support</span>
+                </span>
+                <span class="divider">|</span>
+                <span class="trust-item">
+                    <i class="fas fa-shield-check"></i>
+                    <span>100% Confidential</span>
+                </span>
+                <span class="divider">|</span>
+                <span class="trust-item">
+                    <i class="fas fa-reply"></i>
+                    <span>Response within 24hrs</span>
+                </span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Methods Section -->
+    <section class="section contact-methods-section">
+        <div class="bg-pattern"></div>
+        <div class="contact-methods-container">
+            <div class="contact-method-card fade-in">
+                <div class="method-icon">
+                    <i class="fas fa-phone"></i>
+                </div>
+                <h3 class="method-title">Call Us</h3>
+                <p class="method-description">Speak directly with our team</p>
+                <a href="tel:+254757709931" class="method-link">
+                    <span>0757 709931</span>
+                    <i class="fas fa-arrow-right"></i>
+                </a>
+                <p class="method-hours">Mon-Fri: 8:00 AM - 6:00 PM</p>
+            </div>
+
+            <div class="contact-method-card fade-in">
+                <div class="method-icon">
+                    <i class="fas fa-envelope"></i>
+                </div>
+                <h3 class="method-title">Email Us</h3>
+                <p class="method-description">Send us a detailed message</p>
+                <a href="mailto:info@chawlaco.com" class="method-link">
+                    <span>info@chawlaco.com</span>
+                    <i class="fas fa-arrow-right"></i>
+                </a>
+                <p class="method-hours">We respond within 24 hours</p>
+            </div>
+
+            <div class="contact-method-card fade-in">
+                <div class="method-icon">
+                    <i class="fab fa-whatsapp"></i>
+                </div>
+                <h3 class="method-title">WhatsApp</h3>
+                <p class="method-description">Quick chat with our team</p>
+                <a href="https://wa.me/254757709931" target="_blank" class="method-link">
+                    <span>Chat on WhatsApp</span>
+                    <i class="fas fa-arrow-right"></i>
+                </a>
+                <p class="method-hours">Available during business hours</p>
+            </div>
+
+            <div class="contact-method-card fade-in">
+                <div class="method-icon">
+                    <i class="fas fa-map-marker-alt"></i>
+                </div>
+                <h3 class="method-title">Visit Us</h3>
+                <p class="method-description">Come to our office</p>
+                <a href="#locations" class="method-link">
+                    <span>View Office Location</span>
+                    <i class="fas fa-arrow-right"></i>
+                </a>
+                <p class="method-hours">Kanjata Road</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Options Section -->
+    <section class="section" id="contact-options">
+        <div class="bg-pattern"></div>
+        <div class="contact-form-container">
+            <div class="contact-form-header">
+                <h2 class="section-title">How Can We <span>Help You?</span></h2>
+                <p class="section-subtitle">Choose the best way to get started. We're here to assist you with your legal needs.</p>
+                <div class="section-divider"></div>
+            </div>
+            
+            <div class="contact-options-grid">
+                <a href="#" class="contact-option-card">
+                    <div class="option-icon">
+                        <i class="fas fa-clipboard-check"></i>
+                    </div>
+                    <h3>Get Free Case Assessment</h3>
+                    <p>Answer 5 quick questions and get a preliminary assessment with recommended next steps.</p>
+                    <span class="option-link">
+                        Start Assessment
+                        <i class="fas fa-arrow-right"></i>
+                    </span>
+                </a>
+                
+                <a href="#" class="contact-option-card">
+                    <div class="option-icon">
+                        <i class="fas fa-calendar-check"></i>
+                    </div>
+                    <h3>Book Appointment</h3>
+                    <p>Schedule a free 30-minute consultation with one of our expert attorneys.</p>
+                    <span class="option-link">
+                        Book Now
+                        <i class="fas fa-arrow-right"></i>
+                    </span>
+                </a>
+                
+                <a href="#contact-form" class="contact-option-card">
+                    <div class="option-icon">
+                        <i class="fas fa-envelope"></i>
+                    </div>
+                    <h3>Send Us a Message</h3>
+                    <p>Fill out our contact form and we'll get back to you within 24 hours.</p>
+                    <span class="option-link">
+                        Send Message
+                        <i class="fas fa-arrow-right"></i>
+                    </span>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Form Section -->
+    <section class="section contact-form-section" id="contact-form">
+        <div class="bg-pattern"></div>
+        <div class="contact-form-container">
+            <div class="contact-form-header">
+                <h2 class="section-title">Send Us a <span>Message</span></h2>
+                <p class="section-subtitle">Fill out the form below and our team will get back to you within 24 hours. All inquiries are confidential.</p>
+                <div class="section-divider"></div>
+            </div>
+
+            <div class="contact-form-layout">
+                <!-- Contact Form -->
+                <div class="contact-form-wrapper">
+                    <form action="#" method="POST" class="contact-form" id="contactForm">
+                        
+                        <div class="form-success-message" id="formSuccessMessage">
+                            <i class="fas fa-check-circle"></i>
+                            <span>Thank you! Your message has been sent successfully. We'll get back to you soon.</span>
+                        </div>
+
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="name">
+                                    <span>Full Name</span>
+                                    <span class="required">*</span>
+                                </label>
+                                <input type="text" id="name" name="name" placeholder="Enter your full name" required>
+                                <span class="form-error"></span>
+                            </div>
+                            <div class="form-group">
+                                <label for="email">
+                                    <span>Email Address</span>
+                                    <span class="required">*</span>
+                                </label>
+                                <input type="email" id="email" name="email" placeholder="your.email@example.com" required>
+                                <span class="form-error"></span>
+                            </div>
+                        </div>
+
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="phone">
+                                    <span>Phone Number</span>
+                                    <span class="required">*</span>
+                                </label>
+                                <input type="tel" id="phone" name="phone" placeholder="0757 709931" required>
+                                <span class="form-error"></span>
+                            </div>
+                            <div class="form-group">
+                                <label for="service">
+                                    <span>Practice Area</span>
+                                    <span class="required">*</span>
+                                </label>
+                                <select id="service" name="service" required>
+                                    <option value="">Select a practice area</option>
+                                    <option value="corporate">Corporate Law</option>
+                                    <option value="real-estate">Real Estate Law</option>
+                                    <option value="family">Family Law</option>
+                                    <option value="estate">Estate Planning</option>
+                                    <option value="litigation">Litigation</option>
+                                    <option value="employment">Employment Law</option>
+                                    <option value="other">Other</option>
+                                </select>
+                                <span class="form-error"></span>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="subject">
+                                <span>Subject</span>
+                                <span class="required">*</span>
+                            </label>
+                            <input type="text" id="subject" name="subject" placeholder="Brief description of your inquiry" required>
+                            <span class="form-error"></span>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="message">
+                                <span>Message</span>
+                                <span class="required">*</span>
+                            </label>
+                            <textarea id="message" name="message" rows="6" placeholder="Tell us about your legal matter or question..." required></textarea>
+                            <span class="form-error"></span>
+                        </div>
+
+                        <div class="form-group checkbox-group">
+                            <label class="checkbox-label">
+                                <input type="checkbox" name="privacy" required>
+                                <span class="checkbox-custom"></span>
+                                <span class="checkbox-text">
+                                    I agree to the <a href="#" target="_blank">Privacy Policy</a> and consent to being contacted by Chawla & Co Advocates.
+                                </span>
+                            </label>
+                            <span class="form-error"></span>
+                        </div>
+
+                        <button type="submit" class="btn btn-primary btn-submit">
+                            <span>Send Message</span>
+                            <i class="fas fa-paper-plane"></i>
+                        </button>
+                    </form>
+                </div>
+
+                <!-- Emergency Assistance Card -->
+                <div class="emergency-card-wrapper">
+                    <div class="emergency-card">
+                        <div class="emergency-icon">
+                            <i class="fas fa-phone-alt"></i>
+                        </div>
+                        <h3 class="emergency-title">Emergency Legal Assistance</h3>
+                        <p class="emergency-description">Need urgent legal assistance? Our emergency hotline is available 24/7 for critical matters.</p>
+
+                        <div class="emergency-hotline">
+                            <div class="hotline-badge">
+                                <i class="fas fa-exclamation-triangle"></i>
+                                <span>24/7 EMERGENCY HOTLINE</span>
+                            </div>
+                            <a href="tel:+254700999999" class="hotline-number">
+                                0757 709931
+                            </a>
+                            <p class="hotline-note">Available for urgent legal emergencies only</p>
+                        </div>
+
+                        <div class="emergency-divider"></div>
+
+                        <div class="business-hours">
+                            <h4>Business Hours</h4>
+                            <div class="hours-list">
+                                <div class="hours-item">
+                                    <span class="hours-day">Monday - Friday</span>
+                                    <span class="hours-time">8:00 AM - 6:00 PM</span>
+                                </div>
+                                <div class="hours-item">
+                                    <span class="hours-day">Saturday</span>
+                                    <span class="hours-time">9:00 AM - 1:00 PM</span>
+                                </div>
+                                <div class="hours-item">
+                                    <span class="hours-day">Sunday</span>
+                                    <span class="hours-time">Closed</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="emergency-cta">
+                            <a href="tel:+254757709931" class="btn btn-secondary">
+                                <i class="fas fa-phone"></i>
+                                <span>Call Main Office</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Office Locations Section -->
+    <section class="section locations-section" id="locations">
+        <div class="bg-pattern"></div>
+        <div class="locations-header-container">
+            <h2 class="section-title">Our <span>Office</span> Locations</h2>
+            <p class="section-subtitle">Visit us at our conveniently located office. We're here to serve you with excellence.</p>
+            <div class="section-divider"></div>
+        </div>
+
+        <div class="location-card-full-width fade-in">
+            <div class="location-header">
+                <div class="location-badge">Headquarters</div>
+                <h3 class="location-name">Nairobi Main Office</h3>
+            </div>
+            
+            <div class="location-content-full">
+                <div class="location-info">
+                    <div class="location-detail">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <div>
+                            <strong>Address:</strong>
+                            <p>Kanjata Road<br>Nairobi, Nairobi 00200, KE</p>
+                        </div>
+                    </div>
+                    <div class="location-detail">
+                        <i class="fas fa-phone"></i>
+                        <div>
+                            <strong>Phone:</strong>
+                            <p>0757 709931</p>
+                        </div>
+                    </div>
+                    <div class="location-detail">
+                        <i class="fas fa-envelope"></i>
+                        <div>
+                            <strong>Email:</strong>
+                            <p>nairobi@chawlaco.com</p>
+                        </div>
+                    </div>
+                    <div class="location-detail">
+                        <i class="fas fa-clock"></i>
+                        <div>
+                            <strong>Office Hours:</strong>
+                            <p>Monday - Friday: 8:00 AM - 6:00 PM<br>Saturday: 9:00 AM - 1:00 PM</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="location-map">
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3988.7905!2d36.8219!3d-1.2644!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMcKwMTUnNTIuMCJTIDM2wrA0OScxOC44IkU!5e0!3m2!1sen!2ske!4v1234567890123!5m2!1sen!2ske"
+                        width="100%"
+                        height="100%"
+                        style="border:0; border-radius: 0;"
+                        allowfullscreen=""
+                        loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade">
+                    </iframe>
+                    <a href="https://maps.google.com/?q=Westlands+Nairobi" target="_blank" class="btn btn-secondary" style="margin-top: 1rem; display: inline-block;">
+                        <i class="fas fa-directions"></i> Get Directions
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="section contact-faq-section">
+        <div class="bg-pattern"></div>
+        <h2 class="section-title">Frequently Asked <span>Questions</span></h2>
+        <p class="section-subtitle">Quick answers to common questions about contacting us.</p>
+        <div class="section-divider"></div>
+
+        <div class="contact-faq-container">
+            <div class="faq-item fade-in">
+                <div class="faq-question">
+                    <h4>How quickly will I receive a response?</h4>
+                    <i class="fas fa-chevron-down"></i>
+                </div>
+                <div class="faq-answer">
+                    <p>We aim to respond to all inquiries within 24 hours during business days. For urgent matters, please call our emergency hotline at 0757 709931.</p>
+                </div>
+            </div>
+
+            <div class="faq-item fade-in">
+                <div class="faq-question">
+                    <h4>Is my information confidential?</h4>
+                    <i class="fas fa-chevron-down"></i>
+                </div>
+                <div class="faq-answer">
+                    <p>Absolutely. All communications with our firm are strictly confidential. We adhere to the highest standards of client confidentiality and data protection.</p>
+                </div>
+            </div>
+
+            <div class="faq-item fade-in">
+                <div class="faq-question">
+                    <h4>Do you offer free consultations?</h4>
+                    <i class="fas fa-chevron-down"></i>
+                </div>
+                <div class="faq-answer">
+                    <p>Yes, we offer a free 30-minute initial consultation to discuss your legal matter and determine how we can assist you.</p>
+                </div>
+            </div>
+
+            <div class="faq-item fade-in">
+                <div class="faq-question">
+                    <h4>What should I bring to my first consultation?</h4>
+                    <i class="fas fa-chevron-down"></i>
+                </div>
+                <div class="faq-answer">
+                    <p>Please bring any relevant documents related to your legal matter, identification, and a list of questions you'd like to discuss. Our team will guide you on what's needed.</p>
+                </div>
+            </div>
+
+            <div class="faq-item fade-in">
+                <div class="faq-question">
+                    <h4>Can I schedule an appointment online?</h4>
+                    <i class="fas fa-chevron-down"></i>
+                </div>
+                <div class="faq-answer">
+                    <p>Yes, you can schedule an appointment by filling out the contact form above, calling us, or sending an email. We'll confirm your appointment within 24 hours.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+    <div class="footer-container">
+        <div class="footer-col">
+            <h3>CHAWLA & CO</h3>
+            <p>For over 25 years, we have provided exceptional legal services with integrity, dedication, and an unwavering commitment to client success. Our legacy of excellence continues to define the standard for legal representation.</p>
+            <div class="social-links">
+                <a href="#" class="social-link"><i class="fab fa-facebook-f"></i></a>
+                <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
+                <a href="#" class="social-link"><i class="fab fa-linkedin-in"></i></a>
+                <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
+            </div>
+        </div>
+        <div class="footer-col">
+            <h3>Practice Areas</h3>
+            <ul class="footer-links">
+                <li><a href="#">Corporate Law</a></li>
+                <li><a href="#">Real Estate Law</a></li>
+                <li><a href="#">Family Law</a></li>
+                <li><a href="#">Estate Planning</a></li>
+                <li><a href="#">Litigation</a></li>
+                <li><a href="#">Employment Law</a></li>
+            </ul>
+        </div>
+        <div class="footer-col">
+            <h3>Quick Links</h3>
+            <ul class="footer-links">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#services">Our Services</a></li>
+                <li><a href="#attorneys">Our Attorneys</a></li>
+                <li><a href="#testimonials">Testimonials</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </div>
+        <div class="footer-col">
+            <h3>Contact Us</h3>
+            <ul class="footer-links">
+                <li><i class="fas fa-map-marker-alt"></i> <a href="#">Kanjata Road, Nairobi, Nairobi 00200, KE</a></li>
+                <li><i class="fas fa-phone"></i> <a href="#">0757 709931</a></li>
+                <li><i class="fas fa-envelope"></i> <a href="#">info@chawlaco.com</a></li>
+                <li><i class="fas fa-clock"></i> <a href="#">Mon-Fri: 8:00 AM - 6:00 PM</a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="footer-bottom">
+        <p>&copy;  Chawla & Co Advocates. All Rights Reserved. | <a href="#" style="color: var(--text-gray);">Privacy Policy</a> | <a href="#" style="color: var(--text-gray);">Terms of Use</a></p>
+    </div>
+</footer>
+    
+    <!-- Exit-Intent Popup -->
+    <div class="exit-intent-overlay" id="exitIntentOverlay"></div>
+    <div class="exit-intent-popup" id="exitIntentPopup">
+        <button class="exit-intent-close" id="exitIntentClose">
+            <i class="fas fa-times"></i>
+        </button>
+        <div class="exit-intent-content">
+            <div class="exit-intent-icon">
+                <i class="fas fa-gift"></i>
+            </div>
+            <h2 class="exit-intent-title">Free 30-Minute Consultation</h2>
+            <p class="exit-intent-description">Book your free consultation with our expert legal team today.</p>
+            <div class="exit-intent-actions">
+                <a href="/book-appointment" class="btn btn-primary exit-intent-cta">
+                    Book Now
+                </a>
+                <button class="exit-intent-dismiss" id="exitIntentDismiss">
+                    Maybe Later
+                </button>
+            </div>
+        </div>
+    </div>
+    
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
+
